@@ -3,8 +3,11 @@ package com.machocoders.grades_app.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.machocoders.grades_app.Grade;
 
+@Repository
 public class GradeRepository {
     private List<Grade> studentGrades = new ArrayList<>();
 

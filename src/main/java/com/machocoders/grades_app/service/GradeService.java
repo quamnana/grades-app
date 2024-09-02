@@ -2,12 +2,17 @@ package com.machocoders.grades_app.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.machocoders.grades_app.Constants;
 import com.machocoders.grades_app.Grade;
 import com.machocoders.grades_app.repository.GradeRepository;
 
+@Service
 public class GradeService {
-    GradeRepository gradeRepository = new GradeRepository();
+    @Autowired
+    GradeRepository gradeRepository;
 
     public Grade getGrade(int index) {
         return gradeRepository.getGrade(index);

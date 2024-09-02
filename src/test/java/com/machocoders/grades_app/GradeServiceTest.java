@@ -1,4 +1,4 @@
-package com.machocoders.demo_app;
+package com.machocoders.grades_app;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
@@ -6,15 +6,12 @@ import static org.mockito.Mockito.when;
 
 import java.util.List;
 
-import org.assertj.core.util.Arrays;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.machocoders.grades_app.Constants;
-import com.machocoders.grades_app.Grade;
 import com.machocoders.grades_app.repository.GradeRepository;
 import com.machocoders.grades_app.service.GradeService;
 
